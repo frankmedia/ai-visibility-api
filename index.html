@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Visibility API – Monitor Brand Presence Across LLMs | LLM Scout</title>
+  <meta name="description" content="The AI Visibility API lets developers track brand mentions inside ChatGPT, Claude, Gemini, and Perplexity. Monitor AI citations, share of voice, and prompt-level visibility. Powered by LLM Scout." />
+  <meta name="keywords" content="AI visibility API, LLM monitoring API, ChatGPT brand tracking, Claude citation monitoring, Gemini AI visibility, Perplexity search monitoring, AI brand intelligence API, generative engine optimisation, AI SEO API" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Visibility API – Monitor Brand Presence Across LLMs" />
+  <meta property="og:description" content="Track how your brand appears inside ChatGPT, Claude, Gemini, and Perplexity. Get AI visibility scores, share of voice, competitor intelligence, and citation data." />
+  <meta property="og:url" content="https://frankmedia.github.io/ai-visibility-api/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Visibility API – Monitor Brand Presence Across LLMs" />
+  <meta name="twitter:description" content="Track how your brand appears inside ChatGPT, Claude, Gemini, and Perplexity. Powered by LLM Scout." />
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "LLM Scout AI Visibility API",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "url": "https://llmscout.co/api-documentation",
+    "description": "The AI Visibility API enables developers and agencies to monitor brand presence across ChatGPT, Claude, Gemini, and Perplexity. Track visibility scores, share of voice, AI citations, and competitor intelligence across 12 languages.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "$3 free credit on sign up"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "LLM Scout",
+      "url": "https://llmscout.co"
+    },
+    "featureList": [
+      "Brand AI visibility score",
+      "Share of voice across LLMs",
+      "Competitor intelligence",
+      "AI citation tracking",
+      "12 language support",
+      "ChatGPT, Claude, Gemini, Perplexity coverage"
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0a0a0f; color: #e5e7eb; line-height: 1.6; }
+    a { color: #818cf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+    /* Nav */
+    nav { border-bottom: 1px solid #1f2937; padding: 16px 0; }
+    nav .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .nav-logo { font-weight: 700; font-size: 1rem; color: #f9fafb; }
+    .nav-links { display: flex; gap: 20px; font-size: 0.875rem; }
+
+    /* Hero */
+    .hero { padding: 72px 0 56px; text-align: center; }
+    .hero h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 800; color: #f9fafb; line-height: 1.2; margin-bottom: 20px; }
+    .hero p { font-size: 1.125rem; color: #9ca3af; max-width: 640px; margin: 0 auto 32px; }
+    .btn-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: #4f46e5; color: #fff; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; transition: background 0.2s; }
+    .btn-primary:hover { background: #4338ca; text-decoration: none; }
+    .btn-secondary { background: #1f2937; color: #e5e7eb; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; border: 1px solid #374151; transition: background 0.2s; }
+    .btn-secondary:hover { background: #374151; text-decoration: none; }
+
+    /* Code block */
+    .code-block { background: #111827; border: 1px solid #1f2937; border-radius: 10px; padding: 20px 24px; text-align: left; margin: 40px auto; max-width: 680px; overflow-x: auto; }
+    .code-block pre { font-family: "Fira Code", "Courier New", monospace; font-size: 0.875rem; color: #a5f3fc; white-space: pre; }
+    .code-label { font-size: 0.75rem; color: #6b7280; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* Features */
+    .section { padding: 56px 0; border-top: 1px solid #1f2937; }
+    .section h2 { font-size: 1.6rem; font-weight: 700; color: #f9fafb; margin-bottom: 12px; }
+    .section .subtitle { color: #9ca3af; margin-bottom: 36px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .card { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 24px; }
+    .card h3 { font-size: 1rem; font-weight: 600; color: #f9fafb; margin-bottom: 8px; }
+    .card p { font-size: 0.875rem; color: #9ca3af; }
+
+    /* Integrations */
+    .integrations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .integration-card { background: #111827; border: 1px solid #1f2937; border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .integration-card h3 { font-size: 1rem; font-weight: 600; color: #f9fafb; }
+    .integration-card p { font-size: 0.8rem; color: #9ca3af; }
+    .integration-card a { font-size: 0.8rem; font-weight: 600; color: #818cf8; }
+
+    /* CTA */
+    .cta-section { padding: 64px 0; text-align: center; border-top: 1px solid #1f2937; }
+    .cta-section h2 { font-size: 1.8rem; font-weight: 700; color: #f9fafb; margin-bottom: 12px; }
+    .cta-section p { color: #9ca3af; margin-bottom: 28px; }
+
+    /* Footer */
+    footer { border-top: 1px solid #1f2937; padding: 28px 0; text-align: center; font-size: 0.8rem; color: #6b7280; }
+    footer a { color: #9ca3af; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <span class="nav-logo">AI Visibility API</span>
+      <div class="nav-links">
+        <a href="docs/getting-started.md">Getting Started</a>
+        <a href="docs/api-reference.md">API Reference</a>
+        <a href="https://llmscout.co/api-documentation">Docs</a>
+        <a href="https://llmscout.co/api-portal">Get API Key</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>AI Visibility API</h1>
+        <p>Monitor how your brand appears inside ChatGPT, Claude, Gemini, and Perplexity. Track visibility scores, AI citations, share of voice, and competitor intelligence — all via a single API call.</p>
+        <div class="btn-group">
+          <a href="https://llmscout.co/api-portal" class="btn-primary">Get API Key — Free $3 Credit</a>
+          <a href="https://llmscout.co/api-documentation" class="btn-secondary">View Documentation</a>
+        </div>
+
+        <div class="code-block">
+          <div class="code-label">Quick Start — cURL</div>
+          <pre>curl "https://llmscout.co/api/brand-intelligence\
+  ?brand=Stripe\
+  &api_key=YOUR_API_KEY"</pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What You Get</h2>
+        <p class="subtitle">A single API endpoint returning comprehensive AI visibility intelligence.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>AI Visibility Score</h3>
+            <p>Percentage of AI queries where your brand appears across ChatGPT, Claude, Gemini, and Perplexity.</p>
+          </div>
+          <div class="card">
+            <h3>Share of Voice</h3>
+            <p>Your brand's share of all AI mentions compared to competitors in your sector.</p>
+          </div>
+          <div class="card">
+            <h3>Competitor Intelligence</h3>
+            <p>See which competing brands are cited in AI responses and their visibility scores.</p>
+          </div>
+          <div class="card">
+            <h3>AI Citation Tracking</h3>
+            <p>Discover which domains are cited by AI models when recommending brands like yours.</p>
+          </div>
+          <div class="card">
+            <h3>Related Prompts</h3>
+            <p>The exact queries that surface your brand in AI-generated responses, with per-platform results.</p>
+          </div>
+          <div class="card">
+            <h3>12 Languages</h3>
+            <p>Get AI visibility data in English, Spanish, German, French, Italian, Portuguese, and 7 more.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Integrations</h2>
+        <p class="subtitle">Connect the AI Visibility API to your favourite tools with these ready-made guides.</p>
+        <div class="integrations-grid">
+          <div class="integration-card">
+            <h3>n8n</h3>
+            <p>Automate AI brand monitoring with an importable n8n workflow. Output to Google Sheets, Slack, or email.</p>
+            <a href="integrations/n8n/">View n8n guide &rarr;</a>
+          </div>
+          <div class="integration-card">
+            <h3>Claude MCP</h3>
+            <p>Use the API as a Claude Desktop tool via Model Context Protocol. Ask Claude about your brand's AI visibility directly.</p>
+            <a href="integrations/claude-mcp/">View MCP guide &rarr;</a>
+          </div>
+          <div class="integration-card">
+            <h3>Make.com</h3>
+            <p>Build no-code AI visibility monitoring scenarios in Make. Schedule daily reports and route results anywhere.</p>
+            <a href="integrations/make/">View Make guide &rarr;</a>
+          </div>
+          <div class="integration-card">
+            <h3>Python</h3>
+            <p>A clean Python script using the requests library. Ready to run in seconds.</p>
+            <a href="examples/python/">View Python example &rarr;</a>
+          </div>
+          <div class="integration-card">
+            <h3>JavaScript</h3>
+            <p>Node.js example using native fetch. No dependencies required.</p>
+            <a href="examples/javascript/">View JS example &rarr;</a>
+          </div>
+          <div class="integration-card">
+            <h3>cURL</h3>
+            <p>One-liner cURL examples for quick testing and shell scripts.</p>
+            <a href="examples/curl/">View cURL examples &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Why AI Visibility Matters</h2>
+        <p class="subtitle">AI systems are replacing traditional search as the primary discovery layer.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>AI Search is Growing</h3>
+            <p>Users now ask ChatGPT, Perplexity, and Gemini for brand recommendations. Traditional SEO tools do not track this.</p>
+          </div>
+          <div class="card">
+            <h3>Invisible Means Irrelevant</h3>
+            <p>If your brand is not cited in AI-generated answers, you are missing an emerging discovery channel entirely.</p>
+          </div>
+          <div class="card">
+            <h3>Measure What Matters</h3>
+            <p>Track prompt-level visibility, citation frequency, and cross-model variance with structured API data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>Start Monitoring AI Visibility Today</h2>
+        <p>Create an API account and get $3 free credit. No payment required to start.</p>
+        <div class="btn-group">
+          <a href="https://llmscout.co/api-portal" class="btn-primary">Get Your API Key Free</a>
+          <a href="https://llmscout.co/api-documentation" class="btn-secondary">Read the Docs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Powered by <a href="https://llmscout.co">LLM Scout</a> &mdash;
+      <a href="https://llmscout.co/api-documentation">API Documentation</a> &mdash;
+      <a href="https://llmscout.co/api-portal">API Portal</a> &mdash;
+      <a href="https://llmscout.co/research-tool">Research Tool</a> &mdash;
+      <a href="https://github.com/frankmedia/ai-visibility-api">GitHub</a>
+      </p>
+      <p style="margin-top:8px;">AI Visibility API &bull; LLM Monitoring &bull; ChatGPT Brand Tracking &bull; AI SEO API</p>
+    </div>
+  </footer>
+
+</body>
+</html>
